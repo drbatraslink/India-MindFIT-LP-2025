@@ -201,3 +201,86 @@ $(function() {
       });
     });
   });
+
+// Form functionality
+  $(document).ready(function() {
+    let counter = 1;
+    $('#addmore').click(function() {
+      const newFieldset = `
+      <div class="row ptmd-1 testmonilas_form_custom reference-group" id="ref_${counter}">
+        <div class="form_colum_custom">
+           <div class="row">
+              <div class="col-12">
+              <h3 class="mb-0">Refrence Details</h3>
+            </div>
+           </div>
+          <div class="form-group">
+            <label class="custom_lable_cls">Full Name*</label>
+            <input name="yourname[]" class="form-control" placeholder="Enter Your Full Name">
+          </div>
+        </div>
+        <div class="form_colum_custom">
+          <div class="form-group">
+            <label class="custom_lable_cls">Mobile Number*</label>
+            <input name="mobile[]" class="form-control" placeholder="Enter Your Mobile No">
+          </div>
+        </div>
+        <div class="form_colum_custom">
+          <div class="form-group">
+            <label class="custom_lable_cls">Email ID</label>
+            <input name="email[]" class="form-control" placeholder="Enter Your Email ID">
+          </div>
+        </div>
+        <div class="form_colum_custom">
+          <div class="form-group">
+            <label class="custom_lable_cls">Location</label>
+            <input name="location[]" class="form-control" placeholder="Enter Your Location">
+          </div>
+        </div>
+        <div class="col-md-12 mt-2 mb-3">
+          <button type="button" class="btn btn-danger inputRemove" data-id="ref_${counter}">Remove</button>
+        </div>
+      </div>`;
+      $('#req_input').append(newFieldset);
+      counter++;
+    });
+    $('body').on('click', '.inputRemove', function() {
+      const refId = $(this).data('id');
+      $('#' + refId).remove();
+    });
+    $('#consultForm').submit(function(e) {
+      e.preventDefault();
+      alert('Form submitted successfully!');
+    });
+  });
+
+    // Journey carousel initialization
+  $('#banner_slider').owlCarousel({
+    loop: true, // Set to true if you want infinite looping
+    responsiveClass: true,
+    nav: true, // Shows navigation arrows
+    dots: false, // Disables navigation dots
+    margin: 20,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    smartSpeed: 400, // Speed of animation
+    animateIn: 'fadeIn', // Requires Animate.css
+    navText: false, // Custom nav arrows, can be empty
+    responsive: {
+      0: {
+        items: 1
+      },
+      600: {
+        items: 1
+      },
+      768: {
+        items: 1
+      },
+      1024: {
+        items: 1
+      },
+      1200: {
+        items: 1
+      },
+    }
+  });
