@@ -5,6 +5,7 @@ body{font-family:Inter,sans-serif;font-size:16px;font-weight:400!important;color
 .form-control{border:1px solid #656565}
 .select2-container{z-index:9999}
 .treatment_all_comm_div p{font-size:18px;color:#000000; font-weight: 300;}
+.treatment_all_comm_div p strong{font-weight: 600;}
 @media (max-width:1440px){
 .treatment_all_comm_div p{font-size:16px;color:#000000}
 }
@@ -347,7 +348,7 @@ header{background:#f6f7fb;position:fixed;top:0;z-index:1000!important}
 .check_box_lable label{padding-top:0;font-size:12px;color:#212121!important;margin-bottom:0;line-height:normal;display:flex;font-weight:300}
 .testmonilas_form_custom input:focus,.testmonilas_form_custom select:focus{border:1px solid #1d81c4;outline:0;box-shadow:none;background-color:transparent}
 .testmonilas_form_custom .form-control::placeholder{color:#495057;font-size:16px}
-.form_colum_custom{width:50%;padding:0 15px}
+.form_colum_custom{width:33.33%;padding:0 10px}
 .custom_lable_cls{font-weight:500;color:#212121;margin-bottom:3px;font-size:14px}
 .btn_div_outside{width:30%}
 .btn-form{width:30%!important;height:calc(1.5em + .75rem + 2px);margin-left:15px;font-weight:700!important;font-size:1em;line-height:1em;background:#0c4679!important;color:#fff!important;border:1px solid #0c4679;border-radius:6px!important;transition:.5s;outline:0!important}
@@ -363,7 +364,7 @@ header{background:#f6f7fb;position:fixed;top:0;z-index:1000!important}
 }
 @media(max-width:860px){
 .form_custom_heading_testmonilas{margin-bottom:0;font-size:26px;text-align:center;font-weight:600;color:#212121;line-height:normal}
-.form_colum_custom{width:50%}
+.form_colum_custom{width:50%; padding:0 15px}
 }
 @media(max-width:600px){
 .btn_div_outside{width:100%;padding:0 15px}
