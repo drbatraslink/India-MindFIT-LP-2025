@@ -226,7 +226,7 @@ header{background:#f6f7fb;position:fixed;top:0;z-index:1000!important}
 .treatment_all_comm_div.icon_without_bg_section p{line-height:normal;font-size:18px!important;font-weight:300;line-height:normal;margin-bottom:0}
 .treatment_all_comm_div.icon_without_bg_section .content_box_why_pcos p{width:100%;line-height:normal;font-size:18px!important;font-weight:300;line-height:normal;margin-bottom:0}
 .treatment_all_comm_div.icon_without_bg_section p span{font-size:24px!important;font-weight:600}
-.treatment_all_comm_div.icon_without_bg_section .content_box_why_pcos{display:inline-flex;align-items:center;}
+.treatment_all_comm_div.icon_without_bg_section .content_box_why_pcos{display:inline-flex;}
 .treatment_all_comm_div.icon_without_bg_section h5{font-size:24px!important;font-weight:600}
 @media (max-width:1680px){
 .treatment_all_comm_div.icon_without_bg_section .content_box_why_pcos p,.treatment_all_comm_div.icon_without_bg_section p{font-size:16px!important}
